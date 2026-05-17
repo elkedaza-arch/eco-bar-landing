@@ -3,102 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <title>Eco Bar Comida Natural</title>
-
-  <!-- Vinculación de estilos CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Eco Bar Comida Natural</h1>
+<header>
+  <h1>Eco Bar Comida Natural</h1>
 
-    <nav>
-      <a href="#hero">Inicio</a>
-      <a href="#beneficios">Beneficios</a>
-      <a href="#testimonios">Testimonios</a>
-      <a href="#como-funciona">Cómo funciona</a>
-      <a href="#registro">Registro</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#hero">Inicio</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#registro">Registro</a>
+  </nav>
+</header>
 
-  <main>
+<main>
 
-    <section id="hero">
-      <h2>Nutrición real y natural para el máximo bienestar animal.</h2>
-      <p>
-        Conoce Eco Bar. Fórmulas elaboradas con carnes frescas, frutas y verduras
-        para garantizar la salud de perros y gatos mediante una alimentación natural.
-      </p>
-    </section>
+  <section id="hero">
+    <h2>Nutrición real y natural para el máximo bienestar animal.</h2>
 
-    <section id="beneficios">
-      <h2>Beneficios de Eco Bar</h2>
-      <ul>
-        <li>Mejora la salud digestiva mediante ingredientes naturales.</li>
-        <li>Fortalece el sistema inmunológico gracias a vitaminas naturales.</li>
-        <li>Contribuye al mantenimiento muscular con proteínas de alta calidad.</li>
-        <li>Aporta mayor energía y vitalidad diaria.</li>
-        <li>Ofrece una alternativa confiable y transparente.</li>
-      </ul>
-    </section>
+    <img src="SECO.png"
+         alt="Eco Bar Comida Natural"
+         style="max-width:300px; width:100%; margin:1rem auto; display:block;">
 
-    <section id="testimonios">
-      <h2>Testimonios</h2>
+    <p>
+      Conoce Eco Bar. Fórmulas elaboradas con carnes frescas, frutas y verduras
+      para garantizar la salud de perros y gatos mediante una alimentación natural.
+    </p>
+  </section>
 
-      <article>
-        <p>“Desde que recomiendo Eco Bar, he notado mejoras reales en la digestión y el estado general de las mascotas.”</p>
-        <p><strong>Leonardo Cruz</strong> – Médico Veterinario</p>
-      </article>
+  <section id="beneficios">
+    <h2>Beneficios de Eco Bar</h2>
+    <ul>
+      <li>Mejora la salud digestiva mediante ingredientes naturales.</li>
+      <li>Fortalece el sistema inmunológico gracias a vitaminas naturales.</li>
+      <li>Contribuye al mantenimiento muscular con proteínas de alta calidad.</li>
+      <li>Aporta mayor energía y vitalidad diaria.</li>
+      <li>Ofrece una alternativa confiable y transparente.</li>
+    </ul>
+  </section>
 
-      <article>
-        <p>“Mi perro tiene más energía, mejor apetito y un pelaje más saludable.”</p>
-        <p><strong>María Fernanda López</strong> – Dueña de mascota</p>
-      </article>
-    </section>
+  <section id="testimonios">
+    <h2>Testimonios</h2>
 
-    <section id="como-funciona">
-      <h2>¿Cómo funciona Eco Bar?</h2>
-      <ol>
-        <li>Seleccionamos ingredientes naturales de alta calidad.</li>
-        <li>Preparamos fórmulas balanceadas sin conservantes artificiales.</li>
-        <li>Empacamos cuidadosamente para conservar frescura y nutrientes.</li>
-        <li>El alimento llega listo para servir.</li>
-      </ol>
-    </section>
+    <article>
+      <p>“Desde que recomiendo Eco Bar, he notado mejoras reales en la digestión.”</p>
+      <p><strong>Leonardo Cruz</strong> – Médico Veterinario</p>
+    </article>
 
-    <section id="registro">
-      <h2>Formulario de Registro</h2>
+    <article>
+      <p>“Mi perro tiene más energía y mejor pelaje.”</p>
+      <p><strong>María Fernanda López</strong> – Dueña de mascota</p>
+    </article>
+  </section>
 
-      <form id="formulario">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" required>
+  <section id="como-funciona">
+    <h2>¿Cómo funciona Eco Bar?</h2>
+    <ol>
+      <li>Seleccionamos ingredientes naturales.</li>
+      <li>Preparamos fórmulas balanceadas.</li>
+      <li>Empacamos cuidadosamente.</li>
+      <li>El alimento llega listo para servir.</li>
+    </ol>
+  </section>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" required>
+  <section id="registro">
+    <h2>Formulario de Registro</h2>
 
-        <label for="tipo">Tipo de usuario:</label>
-        <select id="tipo">
+    <form action="https://formspree.io/f/xeevpprg" method="POST">
+
+      <label>
+        Nombre completo:<br>
+        <input type="text" id="nombre" name="nombre" required>
+      </label><br><br>
+
+      <label>
+        Correo electrónico:<br>
+        <input type="email" id="email" name="email" required>
+      </label><br><br>
+
+      <label>
+        Tipo de usuario:<br>
+        <select id="tipo" name="tipo">
           <option value="propietario">Propietario de mascota</option>
           <option value="veterinario">Médico veterinario</option>
         </select>
+      </label><br><br>
 
-        <label>
-          <input type="checkbox" required>
-          Acepto los términos y condiciones
-        </label>
+      <label>
+        <input type="checkbox" name="terminos" required>
+        Acepto los términos y condiciones
+      </label><br><br>
 
-        <button type="submit">Enviar registro</button>
-      </form>
-    </section>
+      <button type="submit">Enviar registro</button>
 
-  </main>
+    </form>
+  </section>
 
-  <footer>
-    <p>© 2026 Eco Bar Comida Natural</p>
-  </footer>
+</main>
 
-  <!-- Vinculación correcta del JavaScript -->
-  <script src="script.js"></script>
+<footer>
+  <p>© 2026 Eco Bar Comida Natural</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
+
